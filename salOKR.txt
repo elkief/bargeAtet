@@ -1,1 +1,5 @@
-Number the first
+Basic Humanoid Model- 3/11
+Basic Apep Model- 3/21
+Models for all characters (based off of previous models) with minor animations, no textures- 4/11
+Animations for all complete- 4/18
+Textures for all completel- 5/2
