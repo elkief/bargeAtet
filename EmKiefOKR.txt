@@ -1,1 +1,37 @@
 
+Em Kief
+
+Prototype
+
+set-up
+  create unity file & organize — Sat by 10pm (est. 20min)
+  create test “character” & scene — Sun by 2pm (est 20min)
+ material toggles (abilities) 
+create materials for 3 guard abilities & create test objects— Sun by 12am (est 30min)
+  draft code for character interaction with object — Mon by 12am (est 2 hour)
+  edit code for each ability (add unique keys for demo purpose) — Tues by 12pm (est 1 hour)
+  demo each ability in scene with single player — Tues by 8pm (est 2 hour)
+
+Minimal Function
+
+win condition 
+  draft code for artifacts collection — 
+
+basic puzzles
+
+Alpha
+
+artifacts
+terrain
+lighting
+
+Beta
+balancing
+puzzels 
+
+Final/Public demo
+intro cutscene 
+
+
+Stretch goals
+player home screen 
