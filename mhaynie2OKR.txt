@@ -1,0 +1,6 @@
+Mark Haynie
+
+Prototype Tasks to Complete:
+- Work on the basic movment of the barge (2 hours)
+- Work on checking if objects around the barge are within a certin range of the light (1 hour)
+- Start work on Networking and basic home screen, so that multiple characters can play the same level (3 hours)
