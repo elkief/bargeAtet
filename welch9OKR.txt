@@ -1,0 +1,23 @@
+Patrick Welch
+
+Goals for prototype:
+	-Thirdperson movement controls
+	-Mouse controllled camera
+	-basic movment (WASD, SPACE)
+	-placeholder for activities
+	-One hero superclass
+	
+Goals for Functional Minimum
+	-Apep controls
+	-Top down view
+	-creating hero subclasses
+	
+Goals for Alpha
+	-Puzzle elements/terrain obstacles
+	
+Goals for Beta
+	-Fine tuning ability interaction
+	
+Goals for Final
+	-Communication system
+	-Create dynamically spawning puzzles for variety
