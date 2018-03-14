@@ -61,7 +61,7 @@ public class abilityTestScript : MonoBehaviour {
         
         if(Input.GetKey(KeyCode.Alpha1)){ 
 
-        Crb.detectCollisions = true;
+        Crb.detectCollisions = false;
     }
     }
 //    public void changeClear(){

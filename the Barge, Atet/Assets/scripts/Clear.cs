@@ -5,29 +5,31 @@ using UnityEngine;
 public class Clear : MonoBehaviour {
 
 ////    public Collider c_Collider; 
-////    public Rigidbody Crb;
-//	public Material c_Material;
-////
-        public GameObject clearBlock1;
-        public GameObject clearBlock2;
-////    
+//    public Rigidbody Crb;
+	public Material c_Material;
+//
+//        public GameObject clearBlock1;
+//        public GameObject clearBlock2;
+//   
 //    public void matClear(){
-////        
+//       
 ////         if(Input.GetKey(KeyCode.Space)){ 
-////
+//
 //        GetComponent<Renderer>().material = c_Material;
-////        
+//        
 ////        Crb.detectCollisions = true;
-////    }
+//    }
 //    }
     
      public void changeClear(){
         
-        if(Input.GetKey(KeyCode.Space)){
+        if(Input.GetKey(KeyCode.Alpha1)){
          
-        GameObject clearBlock1 = (GameObject) GameObject.Instantiate( clearBlock2, transform.position, Quaternion.identity ) ;     
+//        GameObject clearBlock1 = (GameObject) GameObject.Instantiate( clearBlock2, transform.position, Quaternion.identity ) ;     
         
-        Destroy(clearBlock1);  
+//        Destroy(clearBlock1);  
+            GetComponent<Renderer>().material = c_Material;
+            
         }
         
         
