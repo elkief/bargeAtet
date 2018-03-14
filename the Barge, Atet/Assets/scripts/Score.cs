@@ -26,9 +26,13 @@ public class Score : MonoBehaviour {
         score++;
         totalScore =+ points;
   
-        if (totalScore == -10)
+        if (totalScore <= -10)
         {
             scoreText.text = "Game Over. :(";
+        }
+        else if(totalScore <= 0)
+        {
+            scoreText.text = "You can't swim!";
         }
         else if (totalScore >= winScore)
         {

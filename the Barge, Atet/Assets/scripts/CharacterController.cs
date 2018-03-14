@@ -25,7 +25,10 @@ public class CharacterController : MonoBehaviour {
     public GameObject obstacleObject3 = null;
     public string objectName;
     public Vector3 objectOffset;
-    private GameObject player;
+    public GameObject player;
+    public Score scoreManager;
+
+    private bool canMove = true;
 
     Rigidbody rb;
     Transform t;
@@ -49,17 +52,17 @@ public class CharacterController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && canMove)
             rb.velocity += this.transform.forward * speed * Time.deltaTime;
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) && canMove)
             rb.velocity -= this.transform.forward * speed * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && canMove)
             t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && canMove)
             t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canMove)
             rb.AddForce(t.up * force);
 
         if (Input.GetKey(KeyCode.E))
@@ -77,6 +80,12 @@ public class CharacterController : MonoBehaviour {
         else if (Input.GetKeyUp(KeyCode.E))
         {
             draggingObject = false;
+        }
+
+        if(player.transform.position.y < 0)
+        {
+            scoreManager.AddPoint(-8);
+            canMove = false;
         }
 
         /*if(Input.GetKey(KeyCode.I))
