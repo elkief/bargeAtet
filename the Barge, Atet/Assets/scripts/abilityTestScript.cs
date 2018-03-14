@@ -1,28 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class abilityTestScript : MonoBehaviour {
 
-    public Solid solid;
     public Clear clear;
-    public Heavy heavy;
-
-    public Collider s_Collider;
-    public Collider c_Collider;
-    
+    public Collider c_Collider;  
     public Rigidbody Crb;
-    public Rigidbody Srb;
-    public Rigidbody Hrb;
-    
     public Material c_Material;
-    public Material s_Material;
- 
     public Camera mainCamera;
+    
+    public static bool queriesHitTriggers;
+       
+//    public GameObject clearBlock1;
+//    public GameObject clearBlock2;
+//    public GameObject solidBlock;
+    
+    
 	
 	// Update is called once per frame
     void Update(){
-//	void OnCollisionEnter(Collision collision) {
        
         Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
             RaycastHit hit;
@@ -30,50 +28,52 @@ public class abilityTestScript : MonoBehaviour {
         //determines available distance
             if (Physics.Raycast(ray, out hit))
             {
-        Clear c = hit.collider.GetComponent<Clear>();
-        Solid s = hit.collider.GetComponent<Solid>();
-        Heavy h = hit.collider.GetComponent<Heavy>();
-        
-       if (c != null){
+//                OnMouseDown();
+        Clear c = hit.collider.GetComponent<Clear>(); 
+         if (c != null){
             testClear();
-                }
-                
-        else if (s != null){
-            testSolid();
-                }
-                
-         else if (h != null){
-            testHeavy();
+//             clear.matClear();
+             clear.changeClear();
                 }
             }
     }
-    
+        
+//    
+//    void OnMouseDown(){
+//            
+//        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
+//        RaycastHit hit;
+////        
+//        //determines available distance
+//        if (Physics.Raycast(ray, out hit)){
+//          
+//        Clear c = hit.collider.GetComponent<Clear>(); 
+//        
+//            if (c != null){
+//                Crb.detectCollisions = true;
+//                clear.changeClear();
+//                }
+//            }
+//        }
+//        
+//    }
     public void testClear(){
         
-//        Crb.isKinematic = true;  // Deactivated
-//        Crb.isKinematic = false; // Activated  
+        if(Input.GetKey(KeyCode.Space)){ 
 
-        c_Material = GetComponent<Renderer>().material;
-        
         Crb.detectCollisions = true;
     }
-    
-    public void testSolid(){
-        
-//        Srb.isKinematic = true;  // Deactivated
-//        Srb.isKinematic = false; // Activated 
-        
-        Srb.detectCollisions = true;
-                
-        s_Material = GetComponent<Renderer>().material;
     }
-    
-    public void testHeavy(){
-       
-//        Hrb.isKinematic = true;  // Deactivated
-//        Hrb.isKinematic = false; // Activated 
-    }
-    
-    
-
+//    public void changeClear(){
+//        
+//        if(Input.GetKey(KeyCode.Space)){
+//         
+//        GameObject clearBlock1 = (GameObject) GameObject.Instantiate( clearBlock2, transform.position, Quaternion.identity ) ;     
+//        
+//        Destroy(clearBlock1);  
+//        }
+//        
+//        
+//    }
 }
+
