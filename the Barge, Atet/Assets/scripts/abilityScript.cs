@@ -24,19 +24,19 @@ public class abilityScript : MonoBehaviour {
     public Camera mainCamera;
     
     
-    void start(){
-        
-        Crb = GetComponent<Rigidbody>();
-//        Crb.isKinematic = false; // Activated
-          Crb.detectCollisions = true;
-       
-        Srb = GetComponent<Rigidbody>();
-//        Srb.isKinematic = true;  // Deactivated
-        
-        Hrb = GetComponent<Rigidbody>();
-//        Hrb.isKinematic = false; // Activated
-        
-    }
+//    void start(){
+//        
+//        Crb = GetComponent<Rigidbody>();
+////        Crb.isKinematic = false; // Activated
+//          Crb.detectCollisions = true;
+//       
+//        Srb = GetComponent<Rigidbody>();
+////        Srb.isKinematic = true;  // Deactivated
+//        
+//        Hrb = GetComponent<Rigidbody>();
+////        Hrb.isKinematic = false; // Activated
+//        
+//    }
     
     //triggers Sia' dispell-illusion ability
         public void abilityClear(){
@@ -46,7 +46,7 @@ public class abilityScript : MonoBehaviour {
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit, 3))
+            if (Physics.Raycast(ray, out hit))
             {
                
             Clear c = hit.collider.GetComponent<Clear>();
@@ -72,7 +72,7 @@ public class abilityScript : MonoBehaviour {
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit, 3))
+            if (Physics.Raycast(ray, out hit))
             {
               
                 
@@ -96,7 +96,7 @@ public class abilityScript : MonoBehaviour {
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit, 3))
+            if (Physics.Raycast(ray, out hit))
             {
               
             

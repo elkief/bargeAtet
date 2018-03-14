@@ -15,15 +15,15 @@ public class abilityTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-       if (Input.GetKeyDown("space")){
+       if (Input.GetKeyDown("1")){
             ability.abilityClear();
                 }
                 
-        else if (Input.GetKeyDown("enter")){
+        else if (Input.GetKeyDown("2")){
             ability.abilitySolid();
                 }
                 
-         else if (Input.GetKeyDown("shift")){
+         else if (Input.GetKeyDown("3")){
             ability.abilityHeavy();
                 }
             }
