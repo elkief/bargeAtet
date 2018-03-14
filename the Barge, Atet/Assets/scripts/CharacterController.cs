@@ -17,6 +17,16 @@ public class CharacterController : MonoBehaviour {
     //public GameObject Info;
     public string restartLevel;
 
+    public bool draggingObject;
+    public bool playerOne;
+
+    public GameObject obstacleObject = null;
+    public GameObject obstacleObject2 = null;
+    public GameObject obstacleObject3 = null;
+    public string objectName;
+    public Vector3 objectOffset;
+    private GameObject player;
+
     Rigidbody rb;
     Transform t;
 
@@ -29,7 +39,7 @@ public class CharacterController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 8 || collision.gameObject.layer == 10)
         {
             Debug.Log("Collisionn detected");
             Physics.IgnoreLayerCollision(0, 8);
@@ -52,6 +62,23 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
             rb.AddForce(t.up * force);
 
+        if (Input.GetKey(KeyCode.E))
+        {
+            //draggingObject = true;
+            if (objectName != null)
+            {
+                draggingObject = true;
+                obstacleObject = GameObject.Find(objectName);
+                //print("Obstacle position: " + obstacleObject.transform.position);
+                //objectOffset = obstacleObject.transform.position - transform.position;
+                obstacleObject.transform.position = transform.position + objectOffset;
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.E))
+        {
+            draggingObject = false;
+        }
+
         /*if(Input.GetKey(KeyCode.I))
         {
             Info.GetComponent<Text>().enabled = true;
@@ -61,13 +88,15 @@ public class CharacterController : MonoBehaviour {
             Info.GetComponent<Text>().enabled = false;
         }*/
 
-        if (Input.GetButton("Fire1") && Time.time > cannonDelay)
+       /* if (Input.GetButton("Fire1") && Time.time > cannonDelay)
         {
             cannonDelay = Time.time + cannonDelayTime;
             GameObject newBullet = GameObject.Instantiate(Bullet, Cannon.transform.position, Cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 10;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
             Physics.IgnoreCollision(newBullet.GetComponent<Collider>(), Cannon.GetComponent<Collider>());
-        }
+        }*/
     }
+
+   
 }
