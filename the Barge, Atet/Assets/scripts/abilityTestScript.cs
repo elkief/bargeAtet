@@ -59,7 +59,7 @@ public class abilityTestScript : MonoBehaviour {
 //    }
     public void testClear(){
         
-        if(Input.GetKey(KeyCode.Space)){ 
+        if(Input.GetKey(KeyCode.Alpha1)){ 
 
         Crb.detectCollisions = true;
     }
