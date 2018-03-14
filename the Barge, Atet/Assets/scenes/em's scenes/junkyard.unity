@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 308345451}
   - component: {fileID: 308345450}
   - component: {fileID: 308345449}
+  - component: {fileID: 308345452}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -475,13 +476,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 308345447}
-  m_LocalRotation: {x: 0.16318473, y: -0, z: -0, w: 0.9865955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.83, z: -1.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1601317852}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 18.784, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &308345449
 AudioListener:
   m_ObjectHideFlags: 0
@@ -532,6 +533,27 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &308345452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308345447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455241d876ac8b44d8a43bf97c726307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1601317852}
+  pivotOffset: {x: 0, y: 1, z: 0}
+  camOffset: {x: 0, y: 0.5, z: -2}
+  smooth: 10
+  horizontalAimingSpeed: 6
+  verticalAimingSpeed: 6
+  maxVerticalAngle: 30
+  minVerticalAngle: -60
+  XAxis: Analog X
+  YAxis: Analog Y
 --- !u!1001 &481494176
 Prefab:
   m_ObjectHideFlags: 0
@@ -909,7 +931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1133541174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1141,7 +1163,7 @@ Prefab:
       objectReference: {fileID: 308345448}
     - target: {fileID: 1561914645204300, guid: 11597848f55836b4781e555b1bf2c735, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11597848f55836b4781e555b1bf2c735, type: 2}
