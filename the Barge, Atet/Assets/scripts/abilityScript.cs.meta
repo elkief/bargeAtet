@@ -1,11 +1,26 @@
 fileFormatVersion: 2
 guid: db29c08a69e2a45fab96e44a2a5cec4c
-timeCreated: 1520992934
+timeCreated: 1521051261
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - solid: {fileID: 114512845601315732, guid: 74a15e297d9d441cb8b3ae8a35231e29, type: 2}
+  - clear: {fileID: 114235812443644236, guid: 79112ca9235334674b9e305fc656501f, type: 2}
+  - heavy: {fileID: 114962698107604162, guid: 367b2ec7ccd334927912a786d239d116, type: 2}
+  - s_Collider: {fileID: 65974233866925170, guid: 3edc8adb779c34a199d68f38774dacc9,
+      type: 2}
+  - c_Collider: {instanceID: 0}
+  - Crb: {instanceID: 0}
+  - Srb: {instanceID: 0}
+  - Hrb: {instanceID: 0}
+  - c1_Material: {instanceID: 0}
+  - c2_Material: {instanceID: 0}
+  - s1_Material: {instanceID: 0}
+  - s2_Material: {instanceID: 0}
+  - carriedObject: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
