@@ -93,7 +93,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c4e294eeefe2fc147b2e8e02b9564607, type: 2}
+  - {fileID: 2100000, guid: 765d51b2c5255db41a4f1093074db2f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,7 +127,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 90f0b1374f7c8d84dae3b80a1f4f1c5e, type: 2}
+  - {fileID: 2100000, guid: 26046e9523b2d554ca21acc19c7fe5f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -202,22 +202,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 68
-    i1: 221
-    i2: 127
-    i3: 238
-    i4: 130
-    i5: 246
-    i6: 249
-    i7: 4
-    i8: 123
-    i9: 28
-    i10: 109
-    i11: 71
-    i12: 26
-    i13: 108
-    i14: 209
-    i15: 31
+    i0: 175
+    i1: 202
+    i2: 182
+    i3: 78
+    i4: 110
+    i5: 192
+    i6: 25
+    i7: 196
+    i8: 59
+    i9: 46
+    i10: 162
+    i11: 244
+    i12: 41
+    i13: 24
+    i14: 178
+    i15: 145
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!114 &114653452163020590
