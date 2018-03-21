@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class PickupObject : MonoBehaviour
 {
-    GameObject mainCamera;
+    public GameObject mainCamera;
     bool carrying;
     GameObject carriedObject;
     public float distance;
     public float smooth;
+    public float range;
     // Use this for initialization
     void Start()
     {
-        mainCamera = GameObject.FindWithTag("MainCamera");
+        //mainCamera = GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame
@@ -58,7 +59,7 @@ public class PickupObject : MonoBehaviour
 
             Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 3))
+            if (Physics.Raycast(ray, out hit, range))
             {
                 Pickupable p = hit.collider.GetComponent<Pickupable>();
                 if (p != null)
