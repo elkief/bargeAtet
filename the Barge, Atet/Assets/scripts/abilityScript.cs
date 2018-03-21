@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class abilityScript : MonoBehaviour {
 
+    public float range;
+
     public Solid solid;
     public Clear clear;
     public Heavy heavy;
@@ -40,13 +42,15 @@ public class abilityScript : MonoBehaviour {
     
     //triggers Sia' dispell-illusion ability
         public void abilityClear(){
-            
-               //allows object to trigger an effect when within sight and range
-		Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
+
+        //allows object to trigger an effect when within sight and range
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+		Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, range))
             {
                
             Clear c = hit.collider.GetComponent<Clear>();
@@ -67,12 +71,14 @@ public class abilityScript : MonoBehaviour {
     
         //triggers Hu's create-solid ability
         public void abilitySolid(){
-               //allows object to trigger an effect when within sight and range
-		Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
+        //allows object to trigger an effect when within sight and range
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, range))
             {
               
                 
@@ -91,12 +97,13 @@ public class abilityScript : MonoBehaviour {
     
     //triggers heka's heavy-lifting ability 
         public void abilityHeavy(){
-               //allows object to trigger an effect when within sight and range
-		Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
+        //allows object to trigger an effect when within sight and range
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
-        
         //determines available distance
-            if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, range))
             {
               
             

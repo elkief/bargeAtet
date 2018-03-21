@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class abilityTestScript : MonoBehaviour {
 
+    public float range;
+
     public Clear clear;
     public Solid solid;
     public Collider c_Collider;  
@@ -25,12 +27,13 @@ public class abilityTestScript : MonoBehaviour {
 	
 	// Update is called once per frame
     void Update(){
-       
-        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3());
+        int x = Screen.width / 2;
+        int y = Screen.height / 2;
+        Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
         
         //determines available distance
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, range))
             {
 //                OnMouseDown();
         Clear c = hit.collider.GetComponent<Clear>(); 
