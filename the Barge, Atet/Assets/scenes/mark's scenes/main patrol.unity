@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -238,6 +238,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1994717175}
+  xStart: 0
+  yStart: 0
+  zStart: 0
 --- !u!23 &372945345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1064,6 +1067,7 @@ GameObject:
   - component: {fileID: 1874132862}
   - component: {fileID: 1874132864}
   - component: {fileID: 1874132865}
+  - component: {fileID: 1874132863}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -1085,6 +1089,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1874132863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874132861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5713d00b2b59de541887087e19a92c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1994717182}
+  speed: 10
+  distance: 5
 --- !u!195 &1874132864
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1112,15 +1130,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1874132861}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f46ed20e71370f446add15f4125d2b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1994717175}
-  xPlace: 0
-  yPlace: 0
-  zPlace: 0
+  xStart: 0
+  yStart: 0
+  zStart: 0
 --- !u!1 &1994717175
 GameObject:
   m_ObjectHideFlags: 0
