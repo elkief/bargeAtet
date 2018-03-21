@@ -10,6 +10,8 @@ public class Follow : MonoBehaviour {
     public float yStart = 0;
     public float zStart = 0;
 
+    public float xLine = 0;
+
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -17,7 +19,7 @@ public class Follow : MonoBehaviour {
 
     void Update()
     {
-        if(target.GetComponent<Transform>().position.x > 118)
+        if(target.GetComponent<Transform>().position.x > xLine)
         {
             agent.SetDestination(target.GetComponent<Transform>().position);
         }
