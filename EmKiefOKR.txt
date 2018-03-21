@@ -1,7 +1,7 @@
 
 Em Kief
 
-Prototype
+Prototype (3/14)
 
 set-up
   create unity file & organize — Sat by 10pm (est. 20min)
@@ -12,26 +12,17 @@ create materials for 3 guard abilities & create test objects— Sun by 12am (est
   edit code for each ability (add unique keys for demo purpose) — Tues by 12pm (est 1 hour)
   demo each ability in scene with single player — Tues by 8pm (est 2 hour)
 
-Minimal Function
+Minimal Function (3/21)
 
-win condition 
-  draft code for artifacts collection — 
+ outline tomb scene (narrow area w/aI) - Thu by 12am 
+   decide AI components - Wen by 12 am
 
-basic puzzles
+ create tomb scene in unity - Sun by 12am
 
-Alpha
+ create navmesh - Sun by 12am
 
-artifacts
-terrain
-lighting
+ create AI artifact - Mon by 12am
+  create FSM for AI - Sun by 12am
+  move AI around scene - Tues by 12am
 
-Beta
-balancing
-puzzels 
-
-Final/Public demo
-intro cutscene 
-
-
-Stretch goals
-player home screen 
+trigger AI behavior via Player - Wen by 12pm
