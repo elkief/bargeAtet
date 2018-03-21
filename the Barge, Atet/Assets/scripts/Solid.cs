@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Solid : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	  
+    public Material s_Material;
+    
+    public void changeSolid(){
+        
+        if(Input.GetKey(KeyCode.Alpha2)){
+          
+            GetComponent<Renderer>().material = s_Material;
+            
+        }
+        
+        
+    }
 }

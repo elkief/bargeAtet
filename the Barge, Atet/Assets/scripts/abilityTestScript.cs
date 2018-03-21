@@ -6,9 +6,13 @@ using UnityEngine.UI;
 public class abilityTestScript : MonoBehaviour {
 
     public Clear clear;
+    public Solid solid;
     public Collider c_Collider;  
+    public Collider s_Collider;  
     public Rigidbody Crb;
+    public Rigidbody Srb;
     public Material c_Material;
+    public Material s_Material;
     public Camera mainCamera;
     
     public static bool queriesHitTriggers;
@@ -30,10 +34,18 @@ public class abilityTestScript : MonoBehaviour {
             {
 //                OnMouseDown();
         Clear c = hit.collider.GetComponent<Clear>(); 
-         if (c != null){
+        Solid s = hit.collider.GetComponent<Solid>(); 
+        
+        if (c != null){
             testClear();
 //             clear.matClear();
              clear.changeClear();
+                }
+        
+         else if (s != null){
+            testSolid();
+//             clear.matClear();
+             solid.changeSolid();
                 }
             }
     }
@@ -62,6 +74,14 @@ public class abilityTestScript : MonoBehaviour {
         if(Input.GetKey(KeyCode.Alpha1)){ 
 
         Crb.detectCollisions = false;
+    }
+    }
+//     
+    public void testSolid(){
+        
+        if(Input.GetKey(KeyCode.Alpha2)){ 
+
+        Crb.detectCollisions = true;
     }
     }
 //    public void changeClear(){
