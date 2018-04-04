@@ -5,6 +5,8 @@ using UnityEngine;
 public class CollisionKill : MonoBehaviour {
 
     public GameObject Gate;
+    public GameObject Beam;
+    public GameObject target;
     private bool check = false;
     private int numChecks = 0;
 
@@ -18,7 +20,8 @@ public class CollisionKill : MonoBehaviour {
         }
         if(numChecks >= 100)
         {
-            Destroy(this);
+            Destroy(target);
+            Destroy(Beam);
         }
     }
 
