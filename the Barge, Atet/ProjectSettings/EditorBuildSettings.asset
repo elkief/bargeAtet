@@ -8,12 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/MainMenu.unity
     guid: dbb6ba307812edc4883a4c69cc43b6f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/tomb.unity
     guid: 8084e89f979424a74bdff004e0c1e853
-  - enabled: 0
-    path: Assets/scenes/mark's scenes/Junkyard.unity
-    guid: 08f25cda4554ec34d83a60078daa8293
   - enabled: 1
     path: Assets/scenes/Junkyard2.unity
     guid: 4864ae8c6fa7e0242af164539e29c34c
+  - enabled: 1
+    path: Assets/scenes/apep testing/apep_test.unity
+    guid: 1a1adf04b9f92bf4888a7e0fbbf5355b
