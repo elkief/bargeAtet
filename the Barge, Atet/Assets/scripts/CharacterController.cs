@@ -12,17 +12,17 @@ public class CharacterController : MonoBehaviour {
     public float cannonDelay = 0;
     public float cannonDelayTime = 0.25f;
 
-    public GameObject Cannon;
-    public GameObject Bullet;
+    //public GameObject Cannon;
+    //public GameObject Bullet;
     //public GameObject Info;
     public string restartLevel;
 
     public bool draggingObject;
     public bool playerOne;
 
-    public GameObject obstacleObject = null;
-    public GameObject obstacleObject2 = null;
-    public GameObject obstacleObject3 = null;
+    //public GameObject obstacleObject = null;
+    //public GameObject obstacleObject2 = null;
+    //public GameObject obstacleObject3 = null;
     public string objectName;
     public Vector3 objectOffset;
     public GameObject player;
@@ -71,10 +71,10 @@ public class CharacterController : MonoBehaviour {
             if (objectName != null)
             {
                 draggingObject = true;
-                obstacleObject = GameObject.Find(objectName);
+                //obstacleObject = GameObject.Find(objectName);
                 //print("Obstacle position: " + obstacleObject.transform.position);
                 //objectOffset = obstacleObject.transform.position - transform.position;
-                obstacleObject.transform.position = transform.position + objectOffset;
+                //obstacleObject.transform.position = transform.position + objectOffset;
             }
         }
         else if (Input.GetKeyUp(KeyCode.E))
