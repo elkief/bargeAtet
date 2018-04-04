@@ -8,6 +8,7 @@ TagManager:
   - Shadow
   - point
   - bug
+  - pulled
   layers:
   - Default
   - TransparentFX
