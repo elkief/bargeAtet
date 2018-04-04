@@ -166,6 +166,7 @@ MonoBehaviour:
   speed: 5
   delay: 0
   delayTime: 0.25
+  scoreManager: {fileID: 0}
 --- !u!54 &15122870
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BoatTutorial
+namespace WaterTutorial
 {
     //Generates the mesh that's below the water
 public class modifyBoatMesh : MonoBehaviour {
@@ -325,13 +325,4 @@ public class modifyBoatMesh : MonoBehaviour {
     }
 }                
 
-//	// Use this for initialization
-//	void Start () {
-//		
-//	}
-//	
-//	// Update is called once per frame
-//	void Update () {
-//		
-//	}
-//}
+

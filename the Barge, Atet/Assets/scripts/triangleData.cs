@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BoatTutorial
+namespace WaterTutorial
 {
    
     //To save space so we don't have to send millions of parameters to each method
@@ -50,14 +50,3 @@ public class triangleData : MonoBehaviour {
     }
 }
 
-    
-//	// Use this for initialization
-//	void Start () {
-//		
-//	}
-//	
-//	// Update is called once per frame
-//	void Update () {
-//		
-//	}
-//}
