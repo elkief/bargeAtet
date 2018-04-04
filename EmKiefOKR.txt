@@ -26,3 +26,16 @@ Minimal Function (3/21)
   move AI around scene - Tues by 12am
 
 trigger AI behavior via Player - Wen by 12pm
+
+Physics update (4/4)
+
+read up on physics in video games - Tues by 12am
+  choose type (water) - Tues by 12am 
+  complete tutorials - Thurs by 12am
+
+create test scene - Fri by 12am
+  draft code - Sat by 8pm
+  edit code/debug - Mon by 12pm
+
+transfer to group scene - Tues by 12am
+  debug - Wen by 2pm
