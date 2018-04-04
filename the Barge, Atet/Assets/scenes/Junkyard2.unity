@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 221686775}
   - component: {fileID: 221686774}
   - component: {fileID: 221686773}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c227201f20354d47935194c97769c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisObject: {fileID: 235244376}
+  thisObject: {fileID: 1127628086}
   startX: -190
   startY: 0.19
   startZ: 4.11
@@ -1472,6 +1472,7 @@ GameObject:
   - component: {fileID: 1127628088}
   - component: {fileID: 1127628091}
   - component: {fileID: 1127628092}
+  - component: {fileID: 1127628093}
   m_Layer: 8
   m_Name: 'barge '
   m_TagString: Untagged
@@ -1579,6 +1580,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   underWaterObj: {fileID: 606772655}
+--- !u!114 &1127628093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127628086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c227201f20354d47935194c97769c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObject: {fileID: 0}
+  startX: 0
+  startY: 0
+  startZ: 0
+  endX: 0
+  zDirection: 1
+  speed: 1
+  delay: 0
+  delayTime: 0.25
+  scoreManager: {fileID: 0}
 --- !u!1 &1145017889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,7 +2341,7 @@ GameObject:
   - component: {fileID: 1547347954}
   - component: {fileID: 1547347953}
   - component: {fileID: 1547347952}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Visor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6078,7 +6100,7 @@ GameObject:
   - component: {fileID: 1729218054}
   - component: {fileID: 1729218053}
   - component: {fileID: 1729218052}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -6267,7 +6289,7 @@ GameObject:
   - component: {fileID: 1837859549}
   - component: {fileID: 1837859548}
   - component: {fileID: 1837859547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}

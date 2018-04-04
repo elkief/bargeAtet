@@ -27,7 +27,7 @@ public class bargeMovement : MonoBehaviour {
         else if (Time.time > delay)
         {
             delay = Time.time + delayTime;
-            thisObject.GetComponent<Rigidbody>().velocity = new Vector3( speed, 0, (speed / 10) * zDirection);
+            thisObject.GetComponent<Rigidbody>().velocity = new Vector3(speed, 0, (speed / 10) * zDirection);
         }
 
         if (thisObject.transform.position.z > 6.24)
@@ -37,7 +37,7 @@ public class bargeMovement : MonoBehaviour {
         else if (thisObject.transform.position.z < 2.15)
         {
             zDirection = 1;
-        }
+        }//*/
     }
 
     private void OnCollisionEnter(Collision collision)
