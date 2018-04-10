@@ -22,7 +22,7 @@ public class createScript : MonoBehaviour {
     
     
     
-    public void create() {
+    public void spawn() {
         
         if (solid == false){
         rend = GetComponent<Renderer>();

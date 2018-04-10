@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class abilityTriggerAll : MonoBehaviour {
 
-     public createScript spawn;
-     public moveScript update;
-     public revealScript open;
+     public createScript create;
+     public moveScript move;
+     public revealScript reveal;
     
     public GameObject mainCamera;
     public float distance;
@@ -36,14 +36,19 @@ public class abilityTriggerAll : MonoBehaviour {
               
                 if (gameObject.tag == "red"){
 //                    myObject.GetComponent<MyScript>().MyFunction();
-                    
+                    move.update ();
+                        
                 }
                 
                 else if (gameObject.tag == "blue"){
+                  
+                    reveal.open();
                     
                 }
                 
                 else if (gameObject.tag == "green"){
+                    
+                    create.spawn();
                     
                 }
                 
