@@ -36,7 +36,7 @@ public class abilityTriggerAll : MonoBehaviour {
               
                 if (gameObject.tag == "red"){
 //                    myObject.GetComponent<MyScript>().MyFunction();
-                    move.update ();
+//                    move.Update ();
                         
                 }
                 
