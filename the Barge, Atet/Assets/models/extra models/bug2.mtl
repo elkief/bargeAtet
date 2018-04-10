@@ -1,0 +1,74 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 10.04.2018 09:21:04
+
+newmtl under_body
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5843 0.5882 0.2118
+	Kd 0.5843 0.5882 0.2118
+	Ks 0.8460 0.8460 0.8460
+	Ke 0.8471 0.7294 0.2510
+	map_Ka Map__18_Gradient.tga
+	map_Kd Map__18_Gradient.tga
+
+newmtl shell
+	Ns 62.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0275 0.2000 0.5882
+	Kd 0.0275 0.2000 0.5882
+	Ks 0.0000 0.4074 0.8839
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__3_Falloff.tga
+	map_Kd Map__3_Falloff.tga
+
+newmtl eye
+	Ns 54.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0353 0.0039 0.0039
+	Kd 0.0353 0.0039 0.0039
+	Ks 0.9020 0.0902 0.0902
+	Ke 0.8824 0.0000 0.0000
+	map_Ka Map__11_Gradient.tga
+	map_Kd Map__11_Gradient.tga
+	map_Ke Map__23_Falloff.tga
+
+newmtl gold
+	Ns 54.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2431 0.2275 0.0039
+	Kd 0.2431 0.2275 0.0039
+	Ks 0.9020 0.8863 0.4039
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__12_Gradient.tga
+	map_Kd Map__12_Gradient.tga
+
+newmtl wings
+	Ns 50.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5843 0.5882 0.2118
+	Kd 0.5843 0.5882 0.2118
+	Ks 0.8460 0.8460 0.8460
+	Ke 0.8471 0.7294 0.2510
+	map_Ka Map__13_Gradient.tga
+	map_Kd Map__13_Gradient.tga
+	map_d Map__16_Falloff.tga

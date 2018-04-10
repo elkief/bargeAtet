@@ -1,0 +1,44 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 20.03.2018 11:24:34
+
+newmtl Material__26
+	Ns 62.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.027451 0.200000 0.588235
+	Kd 0.027451 0.200000 0.588235
+	Ks 0.000000 0.407373 0.883922
+	Ke 0.000000 0.000000 0.000000
+	map_Ka Map__3_Falloff.tga
+	map_Kd Map__3_Falloff.tga
+
+newmtl Material__24
+	Ns 53.999996
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.035294 0.003922 0.003922
+	Kd 0.035294 0.003922 0.003922
+	Ks 0.901961 0.090196 0.090196
+	Ke 0.000000 0.000000 0.000000
+	map_Ka Map__11_Gradient.tga
+	map_Kd Map__11_Gradient.tga
+
+newmtl Material__27
+	Ns 53.999996
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.243137 0.227451 0.003922
+	Kd 0.243137 0.227451 0.003922
+	Ks 0.901961 0.886275 0.403922
+	Ke 0.000000 0.000000 0.000000
+	map_Ka Map__12_Gradient.tga
+	map_Kd Map__12_Gradient.tga
