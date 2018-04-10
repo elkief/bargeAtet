@@ -255,6 +255,8 @@ GameObject:
   - component: {fileID: 159345600}
   - component: {fileID: 159345599}
   - component: {fileID: 159345598}
+  - component: {fileID: 159345602}
+  - component: {fileID: 159345603}
   m_Layer: 0
   m_Name: waterTop
   m_TagString: Untagged
@@ -276,7 +278,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e806c8dfa76ea4ae3bcb4ebe37c32457, type: 2}
+  - {fileID: 2100000, guid: 393e0d0477f664d78a848dd2208dcdc2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -330,6 +332,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159345602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159345597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827cd0a98fbef47e4a560872ac49f821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squareTransform: {fileID: 31900350}
+  terrainMeshFilter: {fileID: 159345600}
+  spacing: 0
+  centerPos: {x: 0, y: 0, z: 0}
+  vertices: []
+--- !u!114 &159345603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159345597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ff557d07b3c4762b3ba3c7c29e686f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &210290026
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +454,9 @@ GameObject:
   m_Component:
   - component: {fileID: 430137205}
   - component: {fileID: 430137204}
+  - component: {fileID: 430137207}
+  - component: {fileID: 430137208}
+  - component: {fileID: 430137206}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -462,6 +494,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430137206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430137203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827cd0a98fbef47e4a560872ac49f821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squareTransform: {fileID: 1056811828}
+  terrainMeshFilter: {fileID: 159345600}
+  spacing: 3
+  centerPos: {x: 0, y: 0, z: 0}
+  vertices: []
+--- !u!114 &430137207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430137203}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769128493b2214f1a90e35b13a9d81b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatObj: {fileID: 31900345}
+  waterSqrObj: {fileID: 159345597}
+--- !u!114 &430137208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430137203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c3ab2321bb04f64ae1e76719d7b2e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &722112684
 GameObject:
   m_ObjectHideFlags: 0

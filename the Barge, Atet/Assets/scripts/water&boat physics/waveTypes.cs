@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Create different wave types
-public class waveTypes //: MonoBehaviour
+public class waveTypes : MonoBehaviour
 {
 
 	//Sinus waves

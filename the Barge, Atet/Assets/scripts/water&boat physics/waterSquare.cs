@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Generates a plane with a specific resolution and transforms the plane to make waves
-public class waterSquare //: MonoBehaviour 
+public class waterSquare : MonoBehaviour 
 {
 
     public Transform squareTransform;
