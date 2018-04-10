@@ -6,6 +6,7 @@ public class patTriggerHu : MonoBehaviour {
 
 
     GameObject[] tangibles = null;
+    GameObject[] negTangibles = null;
     bool active;
     public float range = 5;
 
@@ -14,6 +15,20 @@ public class patTriggerHu : MonoBehaviour {
         active = false;
         if (tangibles == null)
             tangibles = GameObject.FindGameObjectsWithTag("ShareButton");
+
+        if (negTangibles == null)
+        {
+            negTangibles = GameObject.FindGameObjectsWithTag("ShareButton1");
+            foreach (GameObject tan in negTangibles)
+            {
+
+                tan.transform.localScale = new Vector3(0, 0, 0);
+
+            }
+
+        }
+
+        
     }
 
     // Update is called once per frame
@@ -32,7 +47,23 @@ public class patTriggerHu : MonoBehaviour {
                             tan.transform.localScale = new Vector3(0, 0, 0);
                         }
                     }
+
                 }
+
+                if (negTangibles != null)
+                {
+                    foreach (GameObject tan in negTangibles)
+                    {
+
+                        if (range > Vector3.Distance(this.transform.position, tan.transform.position))
+                        {
+                            tan.transform.localScale = new Vector3(1, 1, 1);
+                        }
+                    }
+
+                }
+
+
                 active = true;
             }
             else
@@ -47,6 +78,20 @@ public class patTriggerHu : MonoBehaviour {
                         }
                     }
                 }
+
+                if (negTangibles != null)
+                {
+                    foreach (GameObject tan in negTangibles)
+                    {
+
+                        if (range > Vector3.Distance(this.transform.position, tan.transform.position))
+                        {
+                            tan.transform.localScale = new Vector3(0, 0, 0);
+                        }
+                    }
+
+                }
+
                 active = false;
             }
 

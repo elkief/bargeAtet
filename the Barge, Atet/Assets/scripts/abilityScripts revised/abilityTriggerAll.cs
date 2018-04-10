@@ -5,7 +5,7 @@ using UnityEngine;
 public class abilityTriggerAll : MonoBehaviour {
 
      public createScript create;
-     public moveScript move;
+     //public moveScript move;
      public revealScript reveal;
     
     public GameObject mainCamera;
@@ -36,8 +36,12 @@ public class abilityTriggerAll : MonoBehaviour {
               
                 if (gameObject.tag == "red"){
 //                    myObject.GetComponent<MyScript>().MyFunction();
-//                    move.Update ();
-                        
+//<<<<<<< HEAD
+////                    move.Update ();
+//=======
+//                    //move.update ();
+//>>>>>>> 199f6a18716278f7ba43b8aebbe3cacf2334f7d3
+//                        
                 }
                 
                 else if (gameObject.tag == "blue"){
