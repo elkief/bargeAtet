@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class sceneTrigger : MonoBehaviour {
-    
-public void 
-    
+
 
 public void goToScene(string chosenScene){
 
