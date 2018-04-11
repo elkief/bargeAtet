@@ -17,7 +17,7 @@ public class Score : MonoBehaviour {
 	void Start () {
         score = 0;
         totalScore = 0;
-        scoreText.text = "Move all the obsticals.\n";
+        scoreText.text = "Open all the gates.\n";
             
     }
 
@@ -32,7 +32,7 @@ public class Score : MonoBehaviour {
         }
         else if(totalScore <= 0)
         {
-            scoreText.text = "You can't swim!";
+            scoreText.text = "Game Over. :(";
         }
         else if (totalScore >= winScore)
         {

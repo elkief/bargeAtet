@@ -4728,6 +4728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe04a9572d87225439bd7a94d860763c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gate: {fileID: 0}
+  Beam: {fileID: 0}
+  target: {fileID: 0}
+  raiseNumber: 100
 --- !u!1 &1873346413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5165,14 +5169,9 @@ MonoBehaviour:
   force: 700
   cannonDelay: 0
   cannonDelayTime: 0.25
-  Cannon: {fileID: 0}
-  Bullet: {fileID: 0}
   restartLevel: 
   draggingObject: 0
   playerOne: 0
-  obstacleObject: {fileID: 0}
-  obstacleObject2: {fileID: 0}
-  obstacleObject3: {fileID: 0}
   objectName: 
   objectOffset: {x: 0, y: 0, z: 0}
   player: {fileID: 1994717175}
