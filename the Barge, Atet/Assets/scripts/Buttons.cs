@@ -18,6 +18,11 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(newGameLevel);
     }
 
+    public void ClearBtn(GameObject clear)
+    {
+        Destroy(clear);
+    }
+
     public void ExitGameBtn()
     {
         Application.Quit();
