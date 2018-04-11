@@ -10,6 +10,10 @@ public class Score : MonoBehaviour {
     public int totalScore = 0;
     public int winScore = 5;
     public GameObject barge = null;
+    public string GameObjective = "Open all the gates.\n";
+    public string GameOver = "Game Over. :(\n";
+    public string winMessage = "You won!\n";
+    public string tabInstruction = "press Tab to toggle UI\n";
 
     int score;
 
@@ -17,8 +21,8 @@ public class Score : MonoBehaviour {
 	void Start () {
         score = 0;
         totalScore = 0;
-        scoreText.text = "Open all the gates.\n";
-            
+        scoreText.text = GameObjective + tabInstruction;
+
     }
 
     // Update is called once per frame
@@ -28,15 +32,15 @@ public class Score : MonoBehaviour {
   
         if (totalScore <= -10)
         {
-            scoreText.text = "Game Over. :(";
+            scoreText.text = GameOver + tabInstruction;
         }
         else if(totalScore <= 0)
         {
-            scoreText.text = "Game Over. :(";
+            scoreText.text = GameOver + tabInstruction;
         }
         else if (totalScore >= winScore)
         {
-            scoreText.text = "You won!\n";
+            scoreText.text = winMessage + tabInstruction;
         }
         
 	}
