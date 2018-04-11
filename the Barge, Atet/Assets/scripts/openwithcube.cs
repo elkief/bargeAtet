@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class openDoor : MonoBehaviour {
+public class openwithcube : MonoBehaviour {
 
 
     public GameObject door;
@@ -20,7 +20,7 @@ public class openDoor : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "hu4")
+        if (collision.gameObject.name == "Door")
         {
             Destroy(door);
             Destroy(gameObject);
