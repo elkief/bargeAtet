@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 29bee3e116ca44a87bbbce17243dcc67
+timeCreated: 1524016684
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _DepthRampTex: {fileID: 2800000, guid: 83cfaa691285b415b8262d4003270dd9, type: 3}
+  - _NoiseTex: {fileID: 2800000, guid: caf8f595330db47178674757302cb161, type: 3}
+  - _MainTex: {fileID: 2800000, guid: d7c3916ab4231464d91b7ada56a93add, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.56452245, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5680,7 +5680,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 598286005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2977643, y: -5, z: -0.38218546}
+  m_LocalPosition: {x: 1.2977643, y: -4, z: -0.38218546}
   m_LocalScale: {x: 10, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 2048786765}
@@ -6547,7 +6547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &699946020
 Transform:
   m_ObjectHideFlags: 0
@@ -16499,6 +16499,7 @@ GameObject:
   - component: {fileID: 1729218053}
   - component: {fileID: 1729218052}
   - component: {fileID: 1729218056}
+  - component: {fileID: 1729218057}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -16590,6 +16591,17 @@ MonoBehaviour:
   minVerticalAngle: -60
   XAxis: Analog X
   YAxis: Analog Y
+--- !u!114 &1729218057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1729218051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00888f82d5bf5479f8f74e0d1cde64e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753592237
 GameObject:
   m_ObjectHideFlags: 0
