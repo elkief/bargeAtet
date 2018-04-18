@@ -10,11 +10,20 @@ public class ButtonsText : MonoBehaviour {
     public GameObject text3;
     public GameObject text4;
 
+    public AudioSource playSource;
+
     private void Start()
     {
         text2.SetActive(false);
         text3.SetActive(false);
         text4.SetActive(false);
+
+        playSource = GetComponent<AudioSource>();
+    }
+
+    public void playSound()
+    {
+        playSource.Play();
     }
 
     public void NewGameBtn(string newGameLevel)
