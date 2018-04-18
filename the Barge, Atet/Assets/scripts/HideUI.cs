@@ -8,17 +8,20 @@ public class HideUI : MonoBehaviour {
     public bool beingPressed;
     public GameObject UIDisplay;
 
-	// Use this for initialization
-	void Start () {
+    public AudioSource playSource;
+
+    // Use this for initialization
+    void Start () {
         isHidden = false;
         beingPressed = false;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
 	    if (Input.GetKey(KeyCode.Tab))
         {
-            if(!beingPressed)
+            playSource.Play();
+            if (!beingPressed)
             {
                 if (isHidden)
                 {
