@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class patTriggerHu : MonoBehaviour {
 
+    public GameObject HuAudioSource;
+    private AudioSource HuAbilitySound = null;
 
     GameObject[] tangibles = null;
     GameObject[] negTangibles = null;
@@ -28,6 +30,7 @@ public class patTriggerHu : MonoBehaviour {
 
         }
 
+        HuAbilitySound = HuAudioSource.GetComponent<AudioSource>();
         
     }
 
@@ -35,6 +38,11 @@ public class patTriggerHu : MonoBehaviour {
     void Update () {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            if (HuAbilitySound != null)
+            {
+                HuAbilitySound.Play();
+            }
+
             if (active == false)
             {
                 if (tangibles != null)
