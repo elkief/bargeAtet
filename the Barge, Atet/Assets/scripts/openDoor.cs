@@ -6,7 +6,6 @@ public class openDoor : MonoBehaviour {
 
 
     public GameObject door;
-    public Score scoreManager;
     // Use this for initialization
     void Start()
     {
@@ -23,7 +22,6 @@ public class openDoor : MonoBehaviour {
     {
         if (collision.gameObject.name == "hu4")
         {
-            scoreManager.AddPoint(1);
             Destroy(door);
             Destroy(gameObject);
         }
