@@ -17461,7 +17461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb55207bb613fa4ba8460c0fc751b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIText: {fileID: 0}
+  UIText: {fileID: 1116706562}
   currentText: 0
   barge: {fileID: 0}
   GameObjective: 'Game Objective:
