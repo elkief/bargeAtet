@@ -21,14 +21,5 @@ EditorBuildSettings:
     path: Assets/scenes/Text/FullTextScene.unity
     guid: d84bb0ee56a771c4fa680a5d47000ba3
   - enabled: 1
-    path: Assets/scenes/Text/FirstIntroScene.unity
-    guid: 52ff45d08fc50ed4ca7245f6f0f30c0e
-  - enabled: 1
-    path: Assets/scenes/Text/SecondIntroScene.unity
-    guid: d70a54f88497c8f41a491342567bf772
-  - enabled: 1
-    path: Assets/scenes/Text/ThirdIntroScene.unity
-    guid: 11d386b7ba953ac42aa3cb75d6971403
-  - enabled: 1
-    path: Assets/scenes/Text/FourthIntroScene.unity
-    guid: 1a50fa9169faa094c92456b344ef246d
+    path: Assets/scenes/Credits.unity
+    guid: 6663bc688f7685d4db0f27d67ac46c1c
