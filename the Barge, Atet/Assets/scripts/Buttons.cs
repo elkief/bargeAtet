@@ -8,9 +8,17 @@ public class Buttons : MonoBehaviour
     public GameObject MainButtons;
     public GameObject PlayButtons;
 
+    public AudioSource playSource;
+
     private void Start()
     {
         PlayButtons.active = false;
+        playSource = GetComponent<AudioSource>();
+    }
+
+    public void playSound()
+    {
+        playSource.Play();
     }
 
     public void NewGameBtn(string newGameLevel)
