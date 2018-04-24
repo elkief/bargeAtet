@@ -9,6 +9,8 @@ public class NetworkControlPlayer : NetworkBehaviour {
     public float rotationSpeed = 90;
     public float force = 700f;
 
+    public GameObject[] renderColorChange;
+
     [SyncVar]
     public string playerName = "Player Name";
 
@@ -40,6 +42,7 @@ public class NetworkControlPlayer : NetworkBehaviour {
 
     // Use this for initialization
     void Start () {
+
         if (isLocalPlayer)
         {
             canMove = true;
@@ -60,12 +63,15 @@ public class NetworkControlPlayer : NetworkBehaviour {
         {
             canMove = false;
         }
-
-        Renderer[] rends = GetComponentsInChildren<Renderer>();
-        foreach (Renderer r in rends)
+        
+        foreach(GameObject gO in renderColorChange)
         {
-            r.material.color = playerColor;
-        }
+            Renderer[] rends = gO.GetComponentsInChildren<Renderer>();
+            foreach (Renderer r in rends)
+            {
+                r.material.color = playerColor;
+            }
+        }        
 
         rb = GetComponent<Rigidbody>();
         t = GetComponent<Transform>();
