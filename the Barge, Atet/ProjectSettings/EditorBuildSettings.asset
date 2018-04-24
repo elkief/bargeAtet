@@ -5,21 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/MainMenu.unity
     guid: dbb6ba307812edc4883a4c69cc43b6f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/Junkyard3.unity
     guid: 3b2d00cf5d6d3544e8f0261164fed560
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/tomb2.unity
     guid: 91a0279f3d41849f8a6becd7d93d5835
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/NetworkHub.unity
     guid: ae36da3d203d3ed43869c83900ca8627
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/Text/FullTextScene.unity
     guid: d84bb0ee56a771c4fa680a5d47000ba3
-  - enabled: 1
+  - enabled: 0
     path: Assets/scenes/Credits.unity
     guid: 6663bc688f7685d4db0f27d67ac46c1c
+  - enabled: 1
+    path: Assets/scenes/mark's scenes/Networking Start.unity
+    guid: 8ad1b1e9d1cec184ab44f6e23a0e550f

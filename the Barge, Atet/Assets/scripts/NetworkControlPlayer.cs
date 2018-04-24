@@ -1,0 +1,76 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Networking;
+
+public class NetworkControlPlayer : NetworkBehaviour {
+
+    public float speed = 25.0f;
+    public float rotationSpeed = 90;
+    public float force = 700f;
+
+    [SyncVar]
+    public string playerName = "Player Name";
+    
+    Rigidbody rb;
+    Transform t;
+
+    public bool canMove;
+
+    private void OnGUI()
+    {
+        if(isLocalPlayer)
+        {
+            playerName = GUI.TextField(new Rect(25, Screen.height - 40, 100, 30), playerName);
+            if(GUI.Button(new Rect(130, Screen.height - 40, 80, 30), "Change"))
+            {
+                CmdChangeName(playerName);
+            }
+        }            
+    }
+
+    [Command]
+    public void CmdChangeName(string newName)
+    {
+        playerName = newName;
+    }
+
+    // Use this for initialization
+    void Start () {
+        if (isLocalPlayer)
+        {
+            canMove = true;
+            Camera.main.transform.position = this.transform.position - this.transform.forward * 10 + this.transform.up * 5;
+            Camera.main.transform.LookAt(this.transform.position);
+            Camera.main.transform.parent = this.transform;
+        }
+        else
+        {
+            canMove = false;
+        }
+
+        rb = GetComponent<Rigidbody>();
+        t = GetComponent<Transform>();
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        this.GetComponentInChildren<TextMesh>().text = playerName;
+
+        if (canMove)
+        {
+            if (Input.GetKey(KeyCode.W))
+                rb.velocity += this.transform.forward * speed * Time.deltaTime;
+            else if (Input.GetKey(KeyCode.S))
+                rb.velocity -= this.transform.forward * speed * Time.deltaTime;
+
+            if (Input.GetKey(KeyCode.D))
+                t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+            else if (Input.GetKey(KeyCode.A))
+                t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+                rb.AddForce(t.up * force);
+        }
+	}
+}
