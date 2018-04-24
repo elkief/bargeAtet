@@ -11,6 +11,9 @@ public class NetworkControlPlayer : NetworkBehaviour {
 
     [SyncVar]
     public string playerName = "Player Name";
+
+    [SyncVar]
+    public Color playerColor = Color.blue;
     
     Rigidbody rb;
     Transform t;
@@ -43,10 +46,25 @@ public class NetworkControlPlayer : NetworkBehaviour {
             Camera.main.transform.position = this.transform.position - this.transform.forward * 10 + this.transform.up * 5;
             Camera.main.transform.LookAt(this.transform.position);
             Camera.main.transform.parent = this.transform;
+
+            if (playerColor == Color.red)
+            {
+                this.transform.position = new Vector3(10, 2, 10);
+            }
+            else
+            {
+                this.transform.position = new Vector3(0, 2, 0);
+            }
         }
         else
         {
             canMove = false;
+        }
+
+        Renderer[] rends = GetComponentsInChildren<Renderer>();
+        foreach (Renderer r in rends)
+        {
+            r.material.color = playerColor;
         }
 
         rb = GetComponent<Rigidbody>();
