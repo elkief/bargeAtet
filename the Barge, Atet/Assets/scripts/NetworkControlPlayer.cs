@@ -94,7 +94,7 @@ public class NetworkControlPlayer : NetworkBehaviour {
                 t.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
             if (Input.GetKeyDown(KeyCode.Space))
-                rb.AddForce(t.up * force);
+                rb.AddForce(t.up * force);//*/
         }
 	}
 }
