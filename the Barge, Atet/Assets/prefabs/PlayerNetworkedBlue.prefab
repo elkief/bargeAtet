@@ -372,6 +372,7 @@ MonoBehaviour:
   speed: 25
   rotationSpeed: 90
   force: 700
+  nameToHide: {fileID: 1175255525425598}
   renderColorChange:
   - {fileID: 1192877620534972}
   playerName: Player Name

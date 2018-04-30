@@ -9,6 +9,8 @@ public class NetworkControlPlayer : NetworkBehaviour {
     public float rotationSpeed = 90;
     public float force = 700f;
 
+    public GameObject nameToHide = null;
+
     public GameObject[] renderColorChange;
 
     [SyncVar]
@@ -45,8 +47,11 @@ public class NetworkControlPlayer : NetworkBehaviour {
 
         if (isLocalPlayer)
         {
+            nameToHide.SetActive(false);
+
             canMove = true;
-            Camera.main.transform.position = this.transform.position - this.transform.forward * 10 + this.transform.up * 5;
+            Camera.main.transform.position = this.transform.position - this.transform.forward * 5 + this.transform.up * 2;
+            //Camera.main.transform.position = this.transform.position + this.transform.up * 2;
             Camera.main.transform.LookAt(this.transform.position);
             Camera.main.transform.parent = this.transform;
 
@@ -79,7 +84,10 @@ public class NetworkControlPlayer : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.GetComponentInChildren<TextMesh>().text = playerName;
+        if (nameToHide.activeSelf == true)
+        {
+            this.GetComponentInChildren<TextMesh>().text = playerName;
+        }        
 
         if (canMove)
         {
