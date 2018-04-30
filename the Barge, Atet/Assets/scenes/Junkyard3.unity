@@ -22763,7 +22763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 1729218055}
-  turnSmoothing: 0.06
+  turnSmoothing: 0.25
   sprintFOV: 100
   sprintButton: Sprint
 --- !u!114 &1598009006
@@ -22784,7 +22784,7 @@ MonoBehaviour:
   speedDampTime: 0.1
   jumpButton: Jump
   jumpHeight: 4
-  jumpIntertialForce: 6
+  jumpIntertialForce: 7
 --- !u!114 &1598009007
 MonoBehaviour:
   m_ObjectHideFlags: 0
