@@ -15,7 +15,7 @@ public class TextDescriptionJunkyard3 : MonoBehaviour {
     public string GameObjective = "Game Objective:\n" + "Open all of the gates so that the barge can make it through the level.\n";
     public string GameOver = "Game Over. :(\n";
     public string winMessage = "You won!\n" + " \n" + "Use the 'Back to Menu' button to return to the menu.\n";
-    public string buttonInstructions = "press 1 to toggle the green walls and platforms\n" + "press 'I' to toggle UI\n" + "hold shift to run.\n";
+    public string buttonInstructions = "press 1 to toggle the green walls and platforms\n" + "Press e to pick up items.\n" + "hold shift to run.\n" + "press 'I' to toggle UI\n" ;
     private string pointZero = "Current Objective: Cross the bridge and use the toggle ability to find the bug in the puzzle.";
     private string pointOne = "Current Objective: Enter the beam puzzle room and step on the blue platform in front of one of the towers.\n"
                            + "Use the 'c' and 'v' keys to rotate the tower so that the beam connects with the door and then collect the bug.\n";
