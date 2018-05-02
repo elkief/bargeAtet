@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectTransportOnTrigger : MonoBehaviour {
 
     public GameObject moveObject;
+    public TextDescriptionJunkyard3 textDes = null;
     public float xPlace = 0;
     public float yPlace = 0;
     public float zPlace = 0;
@@ -17,6 +18,7 @@ public class ObjectTransportOnTrigger : MonoBehaviour {
         {
             moveObject.transform.position = new Vector3(xPlace, yPlace, zPlace);
             found = true;
+            textDes.subtractBugs(1);
         }        
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class respawnPlayer : MonoBehaviour {
 
+    public GameObject thisPlayer = null;
+
     public float xPlace = 0;
     public float yPlace = 0;
     public float zPlace = 0;
@@ -12,7 +14,7 @@ public class respawnPlayer : MonoBehaviour {
     {
         if (other.gameObject.layer == 12)
         {
-            other.gameObject.transform.position = new Vector3(xPlace, yPlace, zPlace);
+            other.GetComponentInParent<Rigidbody>().transform.position = new Vector3(xPlace, yPlace, zPlace);
         }
     }
 }
