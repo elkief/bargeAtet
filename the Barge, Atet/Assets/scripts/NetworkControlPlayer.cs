@@ -57,11 +57,19 @@ public class NetworkControlPlayer : NetworkBehaviour {
 
             if (playerColor == Color.red)
             {
-                this.transform.position = new Vector3(10, 2, 10);
+                this.transform.position = new Vector3(150, 15, 150);
+            }
+            else if (playerColor == Color.blue)
+            {
+                this.transform.position = new Vector3(-150, 15, 150);
+            }
+            else if (playerColor == Color.green)
+            {
+                this.transform.position = new Vector3(150, 15, -150);
             }
             else
             {
-                this.transform.position = new Vector3(0, 2, 0);
+                this.transform.position = new Vector3(-250, 15, -250);
             }
         }
         else
