@@ -16,6 +16,7 @@ public class ObjectTransportOnTrigger : MonoBehaviour {
         if(found == false)
         {
             moveObject.transform.position = new Vector3(xPlace, yPlace, zPlace);
+            found = true;
         }        
     }
 }

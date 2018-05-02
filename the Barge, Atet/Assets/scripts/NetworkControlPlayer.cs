@@ -9,6 +9,8 @@ public class NetworkControlPlayer : NetworkBehaviour {
     public float rotationSpeed = 90;
     public float force = 700f;
 
+    public GameObject moveTrigger = null;
+
     public GameObject nameToHide = null;
 
     public GameObject[] renderColorChange;
@@ -47,6 +49,8 @@ public class NetworkControlPlayer : NetworkBehaviour {
 
         if (isLocalPlayer)
         {
+            moveTrigger.SetActive(false);
+
             nameToHide.SetActive(false);
 
             canMove = true;
@@ -70,6 +74,7 @@ public class NetworkControlPlayer : NetworkBehaviour {
             else
             {
                 this.transform.position = new Vector3(-250, 15, -250);
+                moveTrigger.SetActive(true);
             }
         }
         else
