@@ -18,7 +18,7 @@ public class HideUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKey(KeyCode.I))
+	    if (Input.GetKey(KeyCode.Tab))
         {
             playSource.Play();
             if (!beingPressed)
