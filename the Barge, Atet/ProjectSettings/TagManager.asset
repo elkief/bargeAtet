@@ -15,6 +15,10 @@ TagManager:
   - green
   - ShareButton
   - ShareButton1
+  - SiaObject
+  - sound
+  - water
+  - SiaObject1
   layers:
   - Default
   - TransparentFX
@@ -28,7 +32,7 @@ TagManager:
   - Light
   - Block Object
   - Partical Destroy
-  - 
+  - Player
   - 
   - 
   - 
